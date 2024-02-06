@@ -19,4 +19,8 @@ git config --global user.email joaoizidio287@gmail.com
 ```
 #Lista as configurções do git
 git config --list
+
+ss
+
+
 ```
