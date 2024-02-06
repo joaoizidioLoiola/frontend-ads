@@ -19,8 +19,17 @@ git config --global user.email joaoizidio287@gmail.com
 ```
 #Lista as configurções do git
 git config --list
+```
 
-ss
+```
+#Comandos paara comitar
+git status
+git add .
+git commit -m "Mensagem do commit"
+```
 
 
+```
+#Publicar todos os commits
+git push
 ```
