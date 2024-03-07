@@ -1,0 +1,74 @@
+.page{
+  display: flex;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 95%;
+  border: 2px solid black;
+}
+
+.nav_Hor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 100vh;
+  border: 2px solid black;
+  justify-content: space-between;
+  padding: 5px 0;
+
+}
+
+.ct1{
+  display: flex;
+  height: 50px;
+  width: 150px;
+  background-color: darkcyan;
+}
+
+.ct2{
+  display: flex;
+  height: 50px;
+  width: 150px;
+  background-color: darkred;
+}
+
+.perf{
+  display: block;
+  flex-direction: row;
+  height: 55px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px 5px;
+  margin-right: auto;
+}
+
+.prof{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 5px 0px;
+  background-color: silver;
+
+}
+
+.ct3{
+
+}
+
+.prin{
+
+}
+.ct4{
+
+}
+.ct5{
+
+}
