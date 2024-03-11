@@ -6,12 +6,13 @@ body {
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
 }
 
-header {
+body > header {
   height: 70px;
   background-color: black;
   padding: 0 16px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .logotipo {
   display: flex;
@@ -25,4 +26,17 @@ header {
 .logotipo h1 {
   color: white;
   margin-left: 10px;
+}
+
+.logotipo h1 span {
+  color: #f30000;
+}
+body > header nav {
+  color: azure;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  padding: 0;
 }
