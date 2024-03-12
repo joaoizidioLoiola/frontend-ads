@@ -16,6 +16,7 @@ body > header {
   align-items: center;
   justify-content: space-between;
 }
+
 .logotipo {
   display: flex;
   align-items: center;
@@ -34,9 +35,6 @@ body > header {
   color: #f30000;
 }
 
-body > header nav {
-  color: azure;
-}
 nav ul {
   display: flex;
   list-style-type: none;
@@ -44,15 +42,22 @@ nav ul {
   padding: 0;
 }
 
-main {
-  background-color: dimgray;
+body > main {
   min-height: calc(100vh - 302px);
+  background-color: dimgray;
   padding: 16px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-footer {
+body > footer {
   background-color: black;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
 }
 
 footer p {
@@ -62,27 +67,123 @@ footer p {
 }
 
 .card-ticket {
-  width: 700px;
-  height: 300px;
+  width: 300px;
+  background-color: #0a0a0a;
   border-radius: 20px;
-  background-color: rgb(36, 32, 32);
+  padding: 16px;
+  margin: 20px;
+  align-self: baseline;
 }
 
 .card-ticket header {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  padding: 8px;
-}
-.card-ticket header .bolsa {
-  display: flex;
   align-items: center;
-  color: white;
 }
 
-.card-ticket header .acao ▲ {
+.card-ticket header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-ticket header h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-ticket header h2 span {
+  margin: 5px;
+  color: darkgray;
+  font-weight: normal;
+}
+
+.card-ticket main {
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+
+.card-ticket main p {
+  font-size: 20px;
+  margin: 10px 0 0;
+}
+
+.card-ticket main div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.card-ticket main div span {
+  color: #f5eded;
+  font-size: 20px;
+  margin: 12px 0 0;
+  text-decoration-line: none;
+  padding-left: 10px;
   display: flex;
   align-items: center;
-  color: white;
+  justify-content: center;
+}
+
+.card-ticket main .teste {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.card-ticket main div .value {
+  text-decoration: underline;
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+}
+
+.card-ticket main .val {
+  background: #02bb2a;
+  padding: 3px 16px;
+  margin: 0 8px 0 8px;
+  justify-items: center;
+  align-items: baseline;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card-ticket main .neg {
+  background: #d30404;
+  padding: 3px 16px;
+  margin: 0 8px 0 8px;
+  justify-items: center;
+  align-items: baseline;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card-ticket main div div span {
+  color: #f5eded;
+  font-size: 22px;
+  text-decoration-line: none;
+  padding-left: 10px;
+}
+
+.card-ticket footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 0 0 0;
+  background-color: #0a0a0a;
+}
+
+.card-ticket footer div:nth-child(2) {
+  text-align: right;
+}
+
+.card-ticket footer div p {
+  margin: 0;
+  font-size: 26px;
+}
+
+.card-ticket footer div span {
+  font-size: 14px;
+  color: darkgray;
 }
