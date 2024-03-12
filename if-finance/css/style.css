@@ -33,6 +33,7 @@ body > header {
 .logotipo h1 span {
   color: #f30000;
 }
+
 body > header nav {
   color: azure;
 }
@@ -53,8 +54,35 @@ footer {
   background-color: black;
   height: 200px;
 }
+
 footer p {
   color: white;
   text-align: center;
   padding-top: 50px;
+}
+
+.card-ticket {
+  width: 700px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(36, 32, 32);
+}
+
+.card-ticket header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+.card-ticket header .bolsa {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.card-ticket header .acao ▲ {
+  display: flex;
+  align-items: center;
+  color: white;
 }
