@@ -218,3 +218,21 @@ footer p {
   font-size: 14px;
   color: darkgray;
 }
+
+table {
+  border-collapse: collapse; 
+}
+
+th, td{
+  border: 1px solid #fff;
+  text-align: center; 
+  padding: 6px;
+}
+main > table a {
+  color: #fff;
+  text-decoration: none;
+}
+
+tr:nth-child(odd) {
+  background-color: #252323;
+}
