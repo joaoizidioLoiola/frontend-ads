@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>If Finance</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body>main {
+      flex-direction: column;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>CONTATO</h1>
+  <header>
+    <div class="logotipo">
+      <img src="img/logoif-finance.svg" alt="Logotipo If Finance" />
+      <h1 class="title">IF <span>Finance</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./destaques.html">Destaques</a></li>
+        <li><a href="./about.html">Quem Somos</a></li>
+        <li><a href="./contatos.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Cadastre-se</h1>
+    <form action="exemplo-server.php" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome: </label>
+        <input type="text" name="nome" value="" />
+        <label>Sobrenome: </label>
+        <input type="text" name="sobrenome" value="">
+
+        <label>Email: </label>
+        <input type="email" name="email" value="" />
+        <label>Senha: </label>
+        <input type="password" name="pass" value="">
+      </fieldset>
+
+      <fieldset>
+          <legend>Endereço</legend>
+            <label>Rua: </label>
+            <input type="text" name="rua" value="">
+            <label name="cidade">Cidade: </label>
+            <select name="cidade" id="cidade">
+              <option value="Taua">Tauá</option>
+              <option value="Caragua">Caraguatatuba</option>
+              <option value="Ubatua">Ubatutba</option>
+            </select>
+        <h4 for="frequencia">Com que frequencia visita a cidade? </h4>
+          <div>
+            <input type="radio" name="frequencia" id="muito-pouco" value="Muito pouco"> <label for="muito-pouco">Muito Pouco</label>
+          </div>
+          <div>
+            <input type="radio" name="frequencia" id="Pouco" value="Pouco"> <label for="Pouco">Pouco</label>
+          </div>
+          <div>
+            <input type="radio" name="frequencia" id="Eventualmente" checked value="Eventualmente"> <label for="Eventualmente">Eventualmente</label>
+          </div>
+          <div>
+            <input type="radio" name="frequencia" id="Muito" checked value="Muito"> <label for="Muito">Muito</label>
+          </div>
+      </fieldset>
+
+      <input type="checkbox" name="termos" id="termos" value="Sim"> <label for="termos">Aceita os termos de uso?</label><br>
+      <input type="checkbox" name="newsletter" id="newsletter" value="Sim"> <label for="newsletter">Gostaria de receber propagandas?
+      </label>
+      <br><br>
+      <label for="comentario">Deixe um comentário: </label><br>
+      <textarea name="comentario" id="comentario" cols="50" rows="8"></textarea><br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Resetar"> <span>(Não usar)</span>
+      
+    </form>
+  </main>
+  <footer>
+    <p>Copyright 2024 <span>&copy;</span> João Izídio</p>
+  </footer>
 </body>
+
 </html>
