@@ -26,6 +26,11 @@
         <li><a href="./about.html">Quem Somos</a></li>
         <li><a href="./contatos.html" class="active">Contato</a></li>
       </ul>
+      <div>
+        <span>
+          <img src="./img/menu-icon.svg" alt="Menu">
+        </span>
+      </div>
     </nav>
   </header>
   <main>
@@ -45,39 +50,43 @@
       </fieldset>
 
       <fieldset>
-          <legend>Endereço</legend>
-            <label>Rua: </label>
-            <input type="text" name="rua" value="">
-            <label name="cidade">Cidade: </label>
-            <select name="cidade" id="cidade">
-              <option value="Taua">Tauá</option>
-              <option value="Caragua">Caraguatatuba</option>
-              <option value="Ubatua">Ubatutba</option>
-            </select>
+        <legend>Endereço</legend>
+        <label>Rua: </label>
+        <input type="text" name="rua" value="">
+        <label name="cidade">Cidade: </label>
+        <select name="cidade" id="cidade">
+          <option value="Taua">Tauá</option>
+          <option value="Caragua">Caraguatatuba</option>
+          <option value="Ubatua">Ubatutba</option>
+        </select>
         <h4 for="frequencia">Com que frequencia visita a cidade? </h4>
-          <div>
-            <input type="radio" name="frequencia" id="muito-pouco" value="Muito pouco"> <label for="muito-pouco">Muito Pouco</label>
-          </div>
-          <div>
-            <input type="radio" name="frequencia" id="Pouco" value="Pouco"> <label for="Pouco">Pouco</label>
-          </div>
-          <div>
-            <input type="radio" name="frequencia" id="Eventualmente" checked value="Eventualmente"> <label for="Eventualmente">Eventualmente</label>
-          </div>
-          <div>
-            <input type="radio" name="frequencia" id="Muito" checked value="Muito"> <label for="Muito">Muito</label>
-          </div>
+        <div>
+          <input type="radio" name="frequencia" id="muito-pouco" value="Muito pouco"> <label for="muito-pouco">Muito
+            Pouco</label>
+        </div>
+        <div>
+          <input type="radio" name="frequencia" id="Pouco" value="Pouco"> <label for="Pouco">Pouco</label>
+        </div>
+        <div>
+          <input type="radio" name="frequencia" id="Eventualmente" checked value="Eventualmente"> <label
+            for="Eventualmente">Eventualmente</label>
+        </div>
+        <div>
+          <input type="radio" name="frequencia" id="Muito" checked value="Muito"> <label for="Muito">Muito</label>
+        </div>
       </fieldset>
 
-      <input type="checkbox" name="termos" id="termos" value="Sim"> <label for="termos">Aceita os termos de uso?</label><br>
-      <input type="checkbox" name="newsletter" id="newsletter" value="Sim"> <label for="newsletter">Gostaria de receber propagandas?
+      <input type="checkbox" name="termos" id="termos" value="Sim"> <label for="termos">Aceita os termos de
+        uso?</label><br>
+      <input type="checkbox" name="newsletter" id="newsletter" value="Sim"> <label for="newsletter">Gostaria de receber
+        propagandas?
       </label>
       <br><br>
       <label for="comentario">Deixe um comentário: </label><br>
       <textarea name="comentario" id="comentario" cols="50" rows="8"></textarea><br>
       <input type="submit" value="Enviar">
       <input type="reset" value="Resetar"> <span>(Não usar)</span>
-      
+
     </form>
   </main>
   <footer>
