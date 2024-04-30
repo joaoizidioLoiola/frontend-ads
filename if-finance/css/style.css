@@ -313,7 +313,7 @@ nav div {
   display: none;
 }
 
-@media (width <= 791px) {
+@media (max-width: 791px) {
   nav ul {
     display: none;
   }
@@ -328,7 +328,7 @@ nav div {
   }
 } */
 
-@media (width <= 450px) {
+@media (max-width: 450px) {
   .card-ticket {
     width: 90%;
   }
