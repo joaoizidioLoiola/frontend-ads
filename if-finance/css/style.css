@@ -60,6 +60,7 @@ nav ul {
   gap: 10px;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 body > main {
@@ -332,4 +333,55 @@ nav div {
   .card-ticket {
     width: 90%;
   }
+}
+
+.tr1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: #d30404;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#add-card-modal {
+  position: absolute;
+  background: #00000048;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-card-modal main {
+  width: 500px;
+  height: 600px;
+  background: #000000;
+  padding: 20px;
+  border-radius: 15px;
+  color: #cfcfcf;
+}
+
+#add-card-modal main h2 {
+  margin: 0;
+}
+
+#add-card-modal main form {
+  margin: 20px 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-card-modal main form button {
+  margin: 20px 0;
 }

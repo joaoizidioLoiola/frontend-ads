@@ -35,7 +35,7 @@ const allStock = [
 function addCard(stock) {
   const listaCards = document.querySelector('body > main ')
 
-  listaCards.innerHTML = listaCards.innerHTML + `
+  listaCards.innerHTML += `
   <div class="card-ticket">
         <header>
           <h2><span>${stock.bolsa}:</span>${stock.codigo}</h2>
@@ -81,17 +81,17 @@ function loadCard() {
 function addTable(stock) {
   const main = document.querySelector('#tb2')
 
-  main.innerHTML = main.innerHTML + `
- 
- <tr class="i" >
- <td>${stock.bolsa}</td>
- <td>${stock.codigo}</td>
- <td>${stock.empresa}</td>
- <td>${realFormat(parseInt(stock.valor / 100))}</td>      
- <td>USD$ ${realFormat((+stock.valor / 100) * (+stock.variacao / 100))}</td>
- <td>${stock.nAcoes}</td>
- <td>USD$ ${realFormat((+stock.nAcoes) * (+stock.valor / 100))}</td>
- </tr>
+  main.innerHTML += `
+
+  <tr>
+        <td>${stock.bolsa}</td>
+        <td>${stock.codigo}</td>
+        <td>${stock.empresa}</td>
+        <td>${realFormat(parseInt(stock.valor / 100))}</td>      
+        <td>USD$ ${realFormat((+stock.valor / 100) * (+stock.variacao / 100))}</td>
+        <td>${stock.nAcoes}</td>
+        <td>USD$ ${realFormat((+stock.nAcoes) * (+stock.valor / 100))}</td>
+  </tr>
  `
 }
 
@@ -99,4 +99,33 @@ function loadTable() {
   allStock.map((stock) => {
     addTable(stock)
   })
+}
+const openModal = () => {
+  const modal = document.getElementById('add-card-modal')
+  modal.style.display = 'flex';
+}
+
+const closeModal = (event, id) => {
+  const modal = document.getElementById('add-card-modal')
+
+  if (event?.target?.id === 'add-card-modal' || id === 'add-card-modal') {
+    modal.style.display = 'none';
+  }
+}
+
+const createCard = (event) => {
+  event.preventDefault();
+
+  const { bolsa, codigo, empresa, valor, variacao, nAcoes } = event.target.elements;
+
+  addCard({
+    bolsa: bolsa.value,
+    codigo: codigo.value,
+    empresa: empresa.value,
+    valor: valor.value,
+    variacao: variacao.value,
+    nAcoes: nAcoes.value
+  })
+  closeModal(null, 'add-card-modal');
+  event.target.reset();
 }

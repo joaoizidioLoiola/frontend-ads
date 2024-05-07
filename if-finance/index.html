@@ -16,11 +16,12 @@
       </div>
       <nav>
         <ul>
-          <li><button onclick="addCard(allStock[0])">Add Card</button></li>
+          <li></li>
           <li><a href="./index.html" class="active">Home</a></li>
           <li><a href="./destaques.html">Destaques</a></li>
           <li><a href="./about.html">Quem Somos</a></li>
           <li><a href="./contatos.html">Contato</a></li>
+          <li><button onclick="openModal()">Add Card</button></li>
         </ul>
         <div>
           <span>
@@ -33,5 +34,25 @@
     <footer>
       <p>Copyright 2024 <span>&copy;</span> João Izídio</p>
     </footer>
+    <div id="add-card-modal" onclick="closeModal(event)">
+      <main>
+        <h2>Add Card Ticker</h2>
+        <form onsubmit="createCard(event)">
+          <label for="bolsa">Bolsa: </label>
+          <input type="text" name="bolsa" id="bolsa" />
+          <label for="codigo">Código</label>
+          <input type="text" name="codigo" id="codigo" />
+          <label for="empresa">Empresa: </label>
+          <input type="text" name="empresa" id="empresa" />
+          <label for="valor">Valor: </label>
+          <input type="text" name="valor" id="valor" />
+          <label for="variacao">Variação: </label>
+          <input type="text" name="variacao" id="variacao" />
+          <label for="nAcoes">Número de Ações: </label>
+          <input type="text" name="nAcoes" id="nAcoes" />
+          <button>Add Card</button>
+        </form>
+      </main>
+    </div>
   </body>
 </html>
